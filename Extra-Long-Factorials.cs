@@ -11,6 +11,7 @@ using System.Runtime.Serialization;
 using System.Text.RegularExpressions;
 using System.Text;
 using System;
+using System.Numerics;
 
 class Result
 {
@@ -23,6 +24,12 @@ class Result
 
     public static void extraLongFactorials(int n)
     {
+        BigInteger result = 1;
+        for (int i = 1; i <= n; i++)
+        {
+            result = result * i;
+        }
+        Console.WriteLine(result);
 
     }
 
